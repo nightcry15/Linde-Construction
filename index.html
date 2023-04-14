@@ -27,16 +27,16 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#team">Team</a>
               <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
+                <li id="list"><a href="#">Item 1</a></li>
+                <li id="list"><a href="#">Item 2</a></li>
+                <li id="list"><a href="#">Item 3</a></li>
+                <li id="list"><a href="#">Item 4</a></li>
               </ul>
             </li>
             <li class="small-nav-logo"><a id="nav-africa" href ="index.html"><img src="img/logo/logo-icon.png" alt="Home" width="80" height="68"></a></li>
             <li><a href="#services">Services</a>
               <ul>
-                <li><a href="#">Item 1</a></li>
+                <li id="list"><a href="#">Item 1</a></li>
               </ul>
             </li>
             <li><a href="#tests">Testemonials</a></li>
@@ -56,7 +56,7 @@
   
   <!-- =================== About Articles =================== -->
 
-      <article class="section section-light">
+      <article class="section section-dark">
         <div class="row">
           <h2 class="heading">Our <span>History</span></h2>
           <div class="column-2-unjust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere 
@@ -86,7 +86,7 @@
 
   <!-- =================== Projects Articles =================== -->
 
-    <article class="section section-light">
+    <article class="section section-dark">
       <h2 class="heading">Our <span>Projects</span></h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rerum aspernatur placeat fugit. Sequi 
         minima nisi earum maxime quidem impedit exercitationem nostrum ab mollitia quis, veritatis ex esse quod? Pariatur?
@@ -121,7 +121,7 @@
 
   <!-- =================== Team Articles =================== -->
 
-    <article class="section section-light">
+    <article class="section section-dark">
       <h2 class="heading">Our <span>Team</span></h2>
       <div class="row">
         <div class="column-2"><img src="img/img3.jpg" alt="Padi first breath" width=100%></div>
@@ -153,39 +153,41 @@
       </div>
     </div>
 
-    <!-- =================== Services Articles =================== -->
+    <!-- =================== Services Section =================== -->
+    <article>
+      <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
 
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-camera' ></i>
+                <h3 class="wh-gr-text">New Build</h3>
+                <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
+                    nemo officia voluptatibus?</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
 
-      <div class="services-container">
-          <div class="services-box">
-              <i class='bx bx-camera' ></i>
-              <h3 class="wh-gr-text">New Build</h3>
-              <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
-                  nemo officia voluptatibus?</p>
-                  <a href="#" class="btn">Read More</a>
-          </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3 class="wh-gr-text">Renovation</h3>
+                <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
+                    nemo officia voluptatibus?</p>
+                    <a href="#" class="btn">Read More</a>
+            </div>
 
-          <div class="services-box">
-              <i class='bx bx-code-alt' ></i>
-              <h3 class="wh-gr-text">Renovation</h3>
-              <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
-                  nemo officia voluptatibus?</p>
-                  <a href="#" class="btn">Read More</a>
-          </div>
-
-          <div class="services-box">
-              <i class='bx bx-world' ></i>
-              <h3 class="wh-gr-text">Ourdoors</h3>
-              <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
-                  nemo officia voluptatibus?</p>
-                  <a href="#" class="btn">Read More</a>
-              </div>
-      </div>
-    </section>
-
+            <div class="services-box">
+                <i class='bx bx-world' ></i>
+                <h3 class="wh-gr-text">Ourdoors</h3>
+                <p class="wh-gr-text" id="service-box-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ad dolore dolorem. Ut nostrum 
+                    nemo officia voluptatibus?</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+        </div>
+      </section>
+    </article>
   </section>
+
+  <!-- =================== Section Break =================== -->
 
   <section id="tests">
     <div class="pimg1_closing">
@@ -195,6 +197,25 @@
         </span>
       </div>
     </div>
+
+    <!-- =================== Contact Section =================== -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Us</span></h2>
+      
+      <form action="#">
+          <div class="input-box">
+              <input type="text" placeholder="Full Name">
+              <input type="email" placeholder="Email Address">
+          </div>
+          <div class="input-box">
+              <input type="number" placeholder="Cell Number">
+              <input type="text" placeholder="Email Subject">
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message here"></textarea>
+          <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
   </section>
 
     <footer >

@@ -5,7 +5,6 @@ html,body {
   width: auto;
   margin: 0;
   font-size: 16px;
-  /* font-family: "Century Gothic", sans-serif; */
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
@@ -18,6 +17,7 @@ html,body {
   --text-colour:#fff;
   --main-colour:#0ef;
   --btn-colour: rgba(255,255,255,0.5);
+  --heading-span: #990000; 
 }
 
 .pimg1, .pimg2, .pimg3, .pimg4, .pimg1_closing, .pimg5, .pimg6, .pimg7,
@@ -33,7 +33,7 @@ html,body {
 
 .pimg1 {
   background-image: url("img/bg/img1.jpg");
-  min-height: 950px;
+  min-height: 1000px;
 }
 
 .pimg2 {
@@ -169,11 +169,12 @@ html,body {
 
 .section-light {
   background-color: #f4f4f4;
+  /* background-color: var(--bg-colour); */
   color: #666;
 }
 
 .section-dark {
-  background-color: #282e34;
+  background-color: var(--bg-colour);
   color: #ddd;
 }
 
@@ -277,7 +278,7 @@ h3 {
   font-weight: 100;
 }
 
- /* SERVICES */
+ /* =================== SERVICES =================== */
 
 #service-box-text {
   font-size: 1.2rem;
@@ -303,7 +304,8 @@ h3 {
 }
 
  span {
-  color: var(--main-colour);
+  /* color: var(--main-colour); */
+  color: var(--heading-span);
 }
 
 .heading {
@@ -337,12 +339,13 @@ h3 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: .2rem solid var(--main-colour);
+  /* border: .2rem solid var(--main-colour); */
+  border: .2rem solid #990000;
   transition: .5s ease;
 }
 
 .services-container .services-box:hover {
-  border-color: var(--main-colour);
+  border-color: #ff3333;
   transform: scale(1.02);
 }
 
@@ -360,9 +363,10 @@ color: var(--main-colour);
   margin: 1rem 0 3rem;
 }
 
-  /*NAVBAR START*/
+  /* =================== NAVBAR START =================== */
 nav {
   position: fixed;
+  position: ;
   width: 100%;
   z-index: 10;
 }
@@ -376,6 +380,10 @@ nav ul {
   text-align: center;
   margin: 0;
   transition: 1s;
+}
+
+#list {
+  text-align: left;
 }
 
 nav ul li {
@@ -395,7 +403,7 @@ nav ul li a {
 }
 
 nav ul li ul li a {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 nav ul li ul {
@@ -467,9 +475,51 @@ nav.black ul li a {
     display: block;
   }
 }
-   /*NAVBAR END*/
 
-   /* FOOTER NAV*/
+/* =================== CONTACT SECTION =================== */
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--text-colour);
+  background: var(--second-bg-colour);
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+.contact form .input-box input {
+  width: 45%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* =================== FOOTER NAV =================== */
 .footer-ul li a {
   text-decoration: none;
   color: #fff;
@@ -507,8 +557,6 @@ nav.black ul li a {
 .footer-padi {
   padding-left: 60%;
 }
-
-   /*FOOTER END*/
 
 .footer-column{
   float: left;
