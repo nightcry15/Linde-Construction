@@ -267,6 +267,50 @@ h3 {
   font-weight: 100;
 }
 
+ /* SERVICES */
+
+ .services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--second-bg-colour);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid #00b4ff;
+  transition: .5s ease;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--main-colour);
+  transform: scale(1.02);
+}
+
+.services-box i {
+font-size: 7rem;
+color: var(--main-colour);  
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+
+}
+
+.services-box p {
+  font-size: 1.8rem;
+  margin: 1rem 0 3rem;
+}
+
   /*NAVBAR START*/
 nav {
   position: fixed;
@@ -453,7 +497,8 @@ nav.black ul li a {
 .column-2-unjust {
     float: left;
     width: 45%;
-    text-align: center;
+    /* text-align: center; */
+    text-align: justify;
     padding: 30px;
 }
 
