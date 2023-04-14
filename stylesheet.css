@@ -9,6 +9,13 @@ html,body {
   color: #666;
 }
 
+:root {
+  --bg-colour: #1f242d;
+  --second-bg-colour: #323946;
+  --text-colour:#fff;
+  --main-colour:#0ef;
+}
+
 .pimg1, .pimg2, .pimg3, .pimg4, .pimg1_closing, .pimg5, .pimg6, .pimg7,
 .pimg8, .pimg9, .pimg10, .pimg11, .pimg12, .pimg13, .pimg14, .pimg15,
 .pimg16, .pimg17, .pimg18, .pimg19, .pimg20 {
@@ -232,7 +239,6 @@ h3 {
   padding-left: 5%;
 }
 
-
 .ptext .border {
   background-color: rgba(255,255,255,0.25);
   color: #000;
@@ -269,8 +275,36 @@ h3 {
 
  /* SERVICES */
 
+ .btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-colour);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-colour);
+  font-size: 1.6rem;
+  color: var(--second-bg-colour);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5 ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+ span {
+  color: var(--main-colour);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
  .services h2 {
-  margin-bottom: 5rem;
+  /* margin-bottom: 1rem; */
+  padding-top: 1rem;
+  /* text-align: center; */
 }
 
 .services-container {
@@ -279,6 +313,8 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  padding-bottom: 3rem;
+  padding: 5rem;
 }
 
 .services-container .services-box {
@@ -297,17 +333,17 @@ h3 {
 }
 
 .services-box i {
-font-size: 7rem;
+font-size: 5rem;
 color: var(--main-colour);  
 }
 
 .services-box h3 {
-  font-size: 2.6rem;
+  font-size: 1.8rem;
 
 }
 
 .services-box p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 1rem 0 3rem;
 }
 
