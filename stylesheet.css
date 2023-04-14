@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 html,body {
   height: 100%;
   width: auto;
   margin: 0;
   font-size: 16px;
-  font-family: "Century Gothic", sans-serif;
+  /* font-family: "Century Gothic", sans-serif; */
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
@@ -14,6 +17,7 @@ html,body {
   --second-bg-colour: #323946;
   --text-colour:#fff;
   --main-colour:#0ef;
+  --btn-colour: rgba(255,255,255,0.5);
 }
 
 .pimg1, .pimg2, .pimg3, .pimg4, .pimg1_closing, .pimg5, .pimg6, .pimg7,
@@ -275,13 +279,19 @@ h3 {
 
  /* SERVICES */
 
- .btn {
+#service-box-text {
+  font-size: 1.2rem;
+}
+
+.btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: var(--main-colour);
+  /* background: var(--main-colour); */
+  background: var(--btn-colour);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-colour);
-  font-size: 1.6rem;
+  /* box-shadow: 0 0 1rem var(--main-colour); */
+  box-shadow: 0 0 1rem rgba(255,255,255,0.5);
+  font-size: 1.1rem;
   color: var(--second-bg-colour);
   letter-spacing: .1rem;
   font-weight: 600;
@@ -301,7 +311,11 @@ h3 {
   font-size: 2.5rem;
 }
 
- .services h2 {
+.wh-gr-text {
+  color: #fff;
+}
+
+.services h2 {
   /* margin-bottom: 1rem; */
   padding-top: 1rem;
   /* text-align: center; */
@@ -323,7 +337,7 @@ h3 {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: .2rem solid #00b4ff;
+  border: .2rem solid var(--main-colour);
   transition: .5s ease;
 }
 
@@ -339,7 +353,6 @@ color: var(--main-colour);
 
 .services-box h3 {
   font-size: 1.8rem;
-
 }
 
 .services-box p {
