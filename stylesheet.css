@@ -4,11 +4,13 @@ html,body {
   height: 100%;
   width: auto;
   margin: 0;
+  padding: 0;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  
 }
 
 :root {
@@ -364,11 +366,12 @@ color: var(--main-colour);
 }
 
   /* =================== NAVBAR START =================== */
+  
 nav {
   position: fixed;
-  position: ;
   width: 100%;
   z-index: 10;
+  padding: 1rem;
 }
 
 nav ul {
@@ -392,7 +395,6 @@ nav ul li {
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
 
 nav ul li a {
@@ -422,7 +424,8 @@ nav ul li:hover ul {
 }
 
 nav.black ul {
-  background: rgba(255, 255, 255, 1);
+  /* background: rgba(255, 255, 255, 1); */
+  background: var(--bg-colour);
   color: #666;
 }
 
@@ -435,12 +438,12 @@ nav.black ul li a {
 
 .menu-icon {
   width: 100%;
-  background: #000;
+  background: var(--bg-colour);
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
   cursor: pointer;
-  color: #00b4ff;
+  color: var(--heading-span);
   display: none;
 }
 
