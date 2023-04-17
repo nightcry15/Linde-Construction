@@ -77,4 +77,3 @@ $(window).on("scroll",function() {
 })
 
 window.onscroll = function() {scrollFunction()};
-
