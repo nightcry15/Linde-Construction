@@ -41,7 +41,7 @@ ScrollReveal({
     reset: true,
     distance: '100px',
     duration: 2000,
-    delay: 300
+    delay: 250
  });
 
  ScrollReveal().reveal('.heading', { origin: 'top'});

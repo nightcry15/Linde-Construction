@@ -57,6 +57,7 @@ html,body {
   min-height: 400px;
 }
 
+/*
 .pimg5 {
   background-image: url("img/bg/img5.jpg");
   min-height: 400px;
@@ -67,7 +68,7 @@ html,body {
   min-height: 400px;
 }
 
-.pimg7 {
+ .pimg7 {
   background-image: url("img/bg/img7.jpg");
   min-height: 400px;
 }
@@ -135,7 +136,7 @@ html,body {
 .pimg20 {
   background-image: url("img/bg/img20.jpg");
   min-height: 400px;
-}
+} */
 
 @media only screen and (max-width:700px) {
   .pimg1, .pimg2, .pimg3, .pimg4, .pimg1_closing,.pimg5, .pimg6, .pimg7,
@@ -209,13 +210,13 @@ html,body {
   text-transform: uppercase;
 }
 
-#soc-links:link {
+/* #soc-links:link {
   color: #666;
 }
 
 #soc-links:visited {
   color: #666;
-}
+} */
 
 h1 {
   font-size: 32px;
@@ -262,13 +263,13 @@ h3 {
   line-height: normal;
 }
 
-.explore-nav {
+/* .explore-nav {
   list-style: none;
   display: inline-block;
   padding: 0;
-}
+} */
 
-.explore li a {
+/* .explore li a {
   border: 2px solid #ddd;
   color: #666;
   text-decoration: none;
@@ -277,7 +278,7 @@ h3 {
   font-size: 20px;
   letter-spacing: 4px;
   font-weight: 100;
-}
+} */
 
  /* =================== SERVICES =================== */
 
@@ -298,6 +299,7 @@ h3 {
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .5 ease;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -366,6 +368,14 @@ color: var(--main-colour);
 .services-box p {
   font-size: 1.4rem;
   margin: 1rem 0 3rem;
+}
+
+.services .btn {
+  text-decoration: none;
+}
+
+.services h2 {
+  color: var(--text-colour);
 }
 
   /* =================== NAVBAR START =================== */
@@ -489,7 +499,7 @@ nav.black ul li a {
 /* =================== CONTACT SECTION =================== */
 
 .contact h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .contact form {
@@ -521,7 +531,8 @@ nav.black ul li a {
 }
 
 .contact form textarea {
-  resize: none;
+  resize: vertical;
+  width: 95%;
 }
 
 .contact form .btn {
