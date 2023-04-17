@@ -44,18 +44,18 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#team">Team</a>
-              <ul>
+              <!-- <ul>
                 <li id="list"><a href="#">Item 1</a></li>
                 <li id="list"><a href="#">Item 2</a></li>
                 <li id="list"><a href="#">Item 3</a></li>
                 <li id="list"><a href="#">Item 4</a></li>
-              </ul>
+              </ul> -->
             </li>
             <!-- <li class="small-nav-logo"><a id="nav-africa" href ="index.html"><img src="img/logo/logo-icon.png" alt="Home" width="80" height="68"></a></li> -->
             <li><a href="#services">Services</a>
-              <ul>
+              <!-- <ul>
                 <li id="list"><a href="#">Item 1</a></li>
-              </ul>
+              </ul> -->
             </li>
             <li><a href="#tests">Testemonials</a></li>
             <li><a href="#">Contact</a></li>
@@ -86,7 +86,7 @@
             consequatur placeat eius ipsa accusamus repellat enim expedita inventore accusantium ipsum quasi laudantium 
             amet, nam pariatur ab illo sed illum?<br>
           </div>
-          <div class="column-2"><img id="column-2-img" src="img/img1.jpg" alt="Ok with the seals" width="80%"></div>
+          <div class="column-2" id="right-origin"><img id="column-2-img" src="img/img1.jpg" alt="Ok with the seals" width="80%"></div>
         </div>
       </article>
     </section>
@@ -113,9 +113,9 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quibusdam vero vitae vel laboriosam pariatur 
         assumenda maxime ratione repellendus nobis ad magni, dicta aspernatur quae delectus voluptatum ex ipsa maiores?
         <div class="row">
-          <div class="column-3"><img id="column-3-img" src="img/proj/proj1.jpg" alt="Project 1" width=94%></div>
-          <div class="column-3"><img id="column-3-img" src="img/proj/proj2.jpg" alt="Project 2" width=94%></div>
-          <div class="column-3"><img id="column-3-img" src="img/proj/proj3.jpg" alt="Project 3" width=94%></div>
+          <div class="column-3" id="bottom-origin"><img id="column-3-img" src="img/proj/proj1.jpg" alt="Project 1" width=94%></div>
+          <div class="column-3" id="bottom-origin"><img id="column-3-img" src="img/proj/proj2.jpg" alt="Project 2" width=94%></div>
+          <div class="column-3" id="bottom-origin"><img id="column-3-img" src="img/proj/proj3.jpg" alt="Project 3" width=94%></div>
         </div>
       </p>
       <div class="explore">
@@ -142,7 +142,7 @@
     <article class="section section-dark">
       <h2 class="heading">Our <span>Team</span></h2>
       <div class="row">
-        <div class="column-2"><img src="img/img3.jpg" alt="Padi first breath" width=100%></div>
+        <div class="column-2" id="left-origin"><img src="img/img3.jpg" alt="Padi first breath" width=100%></div>
         <div class="column-2-unjust">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rerum aspernatur placeat fugit. Sequi 
             minima nisi earum maxime quidem impedit exercitationem nostrum ab mollitia quis, veritatis ex esse quod? Pariatur?
@@ -171,7 +171,7 @@
       </div>
     </div>
 
-    <!-- =================== Services Section =================== -->
+    <!-- =================== Services Articles =================== -->
     <article>
       <section class="services" id="services">
         <h2 class="heading">Our <span>Services</span></h2>
@@ -216,26 +216,29 @@
       </div>
     </div>
 
-    <!-- =================== Contact Section =================== -->
+    <!-- =================== Contact Articles =================== -->
+
     <article class="section section-dark">
       <section class="contact">
         <h2 class="heading">Contact <span>Us</span></h2>
         
         <form action="#">
-            <div class="input-box">
+            <div class="input-box">                               <!-- Name & Email address -->
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Address">
             </div>
-            <div class="input-box">
+            <div class="input-box">                               <!-- Cell & Email sunject -->
                 <input type="number" placeholder="Cell Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message here"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message here"></textarea>     <!-- Message -->
             <input type="submit" value="Send Message" class="btn">
         </form>
       </section>
     </article>
   </section>
+
+  <!-- =================== Footer Section =================== -->
 
     <footer >
       <section class="section section-dark">
@@ -255,41 +258,21 @@
               <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ad, ex expedita delectus, 
                 cupiditate aut assumenda maxime esse deserunt ducimus quisquam dolor vero facilis, asperiores 
                 libero. Qui exercitationem sint libero.</h3>
-              <!-- <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li>
-              <li><a href="">Link</a></li> -->
             </ul>
           </div>
           <div class="footer-column">
             <div class="footer-padi">
-              <img src="img/logo/LC-logo.png" alt="PADI Logo" width=80%>
+              <img src="img/logo/LC-logo.png" alt="Logo" width=70%>
             </div>
           </div>
         </div>
       </section>
     </footer>
 
-  <script type="text/javascript">
-    //Menu toggle-button
-    $(document).ready(function() {
-      $(".menu-icon").on("click", function () {
-        $("nav ul").toggleClass("showing");
-      })
-    })
+    <!-- =================== Java Script =================== -->
 
-    //scrolling Effect
-    $(window).on("scroll",function() {
-      if($(window).scrollTop()) {
-        $("nav").addClass("black");
-      }
-      else {
-        $("nav").removeClass("black");
-      }
-    })
-
-    window.onscroll = function() {scrollFunction()};
-  </script>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- custom javascript-->
     <script src="js/script.js"></script>

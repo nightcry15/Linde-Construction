@@ -374,6 +374,11 @@ nav {
   padding: 1rem;
 }
 
+nav.black {
+  background-color: var(--bg-colour);
+  transition: 2s ease;
+}
+
 nav ul {
   list-style: none;
   background: rgba(0, 0, 0, 0);
@@ -382,7 +387,6 @@ nav ul {
   padding: 0;
   text-align: center;
   margin: 0;
-  transition: 1s;
 }
 
 #list {
@@ -404,19 +408,19 @@ nav ul li a {
   padding: 5px 5px;
 }
 
-nav ul li ul li a {
+/* nav ul li ul li a {
   font-size: 20px;
-}
+} */
 
-nav ul li ul {
+/* nav ul li ul {
   display: none;
-}
+} */
 
-nav ul li ul li{
+/* nav ul li ul li{
   display: block;
   text-align: left;
   margin: 0px 0px;
-}
+} */
 
 nav ul li:hover ul {
   display: block;
@@ -425,7 +429,7 @@ nav ul li:hover ul {
 
 nav.black ul {
   /* background: rgba(255, 255, 255, 1); */
-  background: var(--bg-colour);
+  /* background: var(--bg-colour); */
   color: #666;
 }
 
@@ -433,7 +437,7 @@ nav.black ul li a {
   text-decoration: none;
   font-size: 20px;
   transition: 1s;
-  filter: invert(50%);
+  /* filter: invert(50%); */
 }
 
 .menu-icon {
