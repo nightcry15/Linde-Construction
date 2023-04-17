@@ -41,11 +41,11 @@ ScrollReveal({
     reset: true,
     distance: '100px',
     duration: 2000,
-    delay: 150
+    delay: 300
  });
 
  ScrollReveal().reveal('.heading', { origin: 'top'});
- ScrollReveal().reveal('#bottom-origin, .contact', { origin: 'bottom'});
+ ScrollReveal().reveal('#bottom-origin, .contact, .services', { origin: 'bottom'});
  ScrollReveal().reveal('#left-origin', { origin: 'left'});
  ScrollReveal().reveal('#right-origin', { origin: 'right'});
 
